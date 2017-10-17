@@ -1,0 +1,10 @@
+C:\Users\artur\Desktop\Affine\Affine_lab4\bin\Debug\Affine 4.exe.config
+C:\Users\artur\Desktop\Affine\Affine_lab4\bin\Debug\Affine 4.exe
+C:\Users\artur\Desktop\Affine\Affine_lab4\bin\Debug\Affine 4.pdb
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\lab4.csprojResolveAssemblyReference.cache
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\lab4.Form1.resources
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\Affine_4.Properties.Resources.resources
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\lab4.csproj.GenerateResource.Cache
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\lab4.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\Affine 4.exe
+C:\Users\artur\Desktop\Affine\Affine_lab4\obj\Debug\Affine 4.pdb
