@@ -35,8 +35,8 @@ namespace lab4
 
         public class My_point
         {
-            public int X, Y;
-            public My_point(int x, int y) { X = x; Y = y; }
+            public float X, Y;
+            public My_point(float x, float y) { X = x; Y = y; }
             public static bool operator ==(My_point p1, My_point p2)
             {
                 if (System.Object.ReferenceEquals(p1, p2))
@@ -184,8 +184,8 @@ namespace lab4
 				p.Y -= rotate_point.Y;
 				double xa = p.X * Math.Cos(angle) + p.Y * Math.Sin(angle);
 				double ya = p.Y * Math.Cos(angle) - p.X * Math.Sin(angle);
-				p.X = (int)(xa + rotate_point.X);
-				p.Y = (int)(ya + rotate_point.Y);
+				p.X = (float)(xa + rotate_point.X);
+				p.Y = (float)(ya + rotate_point.Y);
 			}
 			RedrawImage();
 		}
@@ -241,7 +241,7 @@ namespace lab4
 		{
 			if (points.Count == 0)
 				return null;
-			int sumX = 0, sumY = 0;
+			float sumX = 0, sumY = 0;
 			foreach (My_point p in points)
 			{
 				sumX += p.X;
@@ -257,7 +257,8 @@ namespace lab4
 		/// </summary>
 		private void RedrawImage()
 		{
-			g.Clear(Color.White);
+            if (!checkBox2.Checked)
+			    g.Clear(Color.White);
 			if (rotate_point != null)
 				g.FillEllipse(brush, rotate_point.X - 4, rotate_point.Y - 4, 8, 8);
 			foreach (My_point p in points)
@@ -351,10 +352,10 @@ namespace lab4
 		/// <returns>Возвращается значение угла между ребрами в градусах</returns>
 		private double Degree_between_edges(Edge e1, Edge e2)
 		{
-			int e1X = e1.P2.X - e1.P1.X;
-			int e1Y = e1.P2.Y - e1.P1.Y;
-			int e2X = e2.P2.X - e2.P1.X;
-			int e2Y = e2.P2.Y - e2.P1.Y;
+            float e1X = e1.P2.X - e1.P1.X;
+            float e1Y = e1.P2.Y - e1.P1.Y;
+            float e2X = e2.P2.X - e2.P1.X;
+            float e2Y = e2.P2.Y - e2.P1.Y;
 			double res = Math.Acos((e1X * e2X + e1Y * e2Y) / (Math.Sqrt(e1X * e1X + e1Y * e1Y) * Math.Sqrt(e2X * e2X + e2Y * e2Y))) * (180 / Math.PI);
 			return res;
 		}
@@ -409,7 +410,12 @@ namespace lab4
 			else
 				MessageBox.Show("Ребра не пересекаются!", "Сообщение");
 		}
-	}
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 	
 	
 

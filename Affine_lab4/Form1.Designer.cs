@@ -55,6 +55,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.butt_intersec = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.set_dis_x)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.set_dis_y)).BeginInit();
@@ -364,6 +366,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.butt_clear);
             this.panel1.Controls.Add(this.butt_intersec);
@@ -394,6 +398,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(139, 561);
             this.panel1.TabIndex = 29;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 488);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(69, 17);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "Отладка";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Form1
             // 
@@ -446,6 +471,8 @@
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Button butt_intersec;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
